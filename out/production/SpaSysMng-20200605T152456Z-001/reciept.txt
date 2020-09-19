@@ -1,0 +1,22 @@
+			 Aamya Beauty Care Center  
+			   Kalimati Road-8331001
+			     Ph.No.:-8603100915
+						 Date:3/6/2020
+						 Reciept: RPT022
+	____________________________________________________________________
+				 User Details
+				-----------------
+	Customer/Member Name:-Seema kumari			 Phone No.:-1111111111
+	____________________________________________________________________
+	Package:- Bridal Package
+
+	Treatment Name 						 Price	
+	____________________________________________________________________
+	Mini Pedicure						1000 Rs.
+	Body Therapy						800 Rs.
+	Mini manicure						1000 Rs.
+
+
+
+	____________________________________________________________________
+	Total 						 2600.15 Rs.

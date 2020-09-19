@@ -1,0 +1,177 @@
+create table bookingtbl
+(bookdate varchar2(15),
+bookid varchar2(15),
+usertype varchar2(15),
+cust_mem_id varchar2(15),
+appointdate varchar2(15),
+disptype varchar2(50),
+packid varchar2(15),
+discount varchar2(10),
+realcost varchar2(10),
+totalcost varchar2(10),
+massagerid varchar2(15),
+massagername varchar2(30),
+starttime varchar2(15),
+endtime varchar2(15),
+pystate varchar2(20),
+dietid varchar2(15));
+======================================
+create table booktbl
+(bookid varchar2(10),
+treatid varchar2(10));
+======================================
+create table canceltbl
+(canceldate varchar2(15),
+bookdate varchar2(15),
+canid varchar2(15),
+bookid varchar2(15),
+cust_mem_id varchar2(15),
+appointdate varchar2(15),
+treat_pack_id varchar2(15),
+totalcost varchar2(10),
+paystat varchar2(20),
+ndays varchar2(10),
+deductfund varchar2(10),
+refund varchar2(10),
+payamt varchar2(10),
+staffid varchar2(15),
+stime varchar2(15),
+etime varchar2(15));
+=======================================
+create table customertbl
+(custdate varchar2(15),
+custid varchar2(15),
+custname varchar2(30),
+custaddress varchar2(50),
+custmob varchar2(25),
+custemail varchar2(25),
+custgender varchar2(10));
+=======================================
+create table dietstbl
+(cust_mem_id varchar2(15),
+dietid varchar2(15),
+diettype varchar2(15),
+dietdate varchar2(15),
+remarks varchar2(30));
+======================================
+create table diettbl
+(dietid varchar2(15),
+diettype varchar2(15),
+foodallowed varchar2(30),
+foodnotallowed varchar2(30),
+foodlist varchar2(30));
+======================================
+create table enquirytbl
+(enqid varchar2(15),
+enqname varchar2(30),
+enqdate varchar2(15),
+enqaddress varchar2(50),
+enqgender varchar2(15),
+enqmobno varchar2(25),
+enqmail varchar2(25),
+enqpurpose varchar2(30),
+enqstatus varchar2(20));
+======================================
+create table followtbl
+(enquiryid varchar2(15),
+followid varchar2(15),
+status varchar2(20),
+fdate varchar2(15),
+fphone varchar2(25),
+fmail varchar2(30));
+======================================
+create table keytbl
+(custid varchar2(15),
+mem_id varchar2(15),
+treat_id varchar2(15),
+pack_id varchar2(15),
+dietid varchar2(15),
+enqid varchar2(15),
+followid varchar2(15),
+bookingid varchar2(15),
+typeid varchar2(15),
+staffid varchar2(15),
+cancelid varchar2(15),
+paymentid varchar2(15),
+recno varchar2(15));
+======================================
+create table logintbl
+(username varchar2(15),
+password varchar2(15),
+usertype varchar2(15));
+======================================
+create table membertbl
+(mem_date varchar2(15),
+mem_id varchar2(15),
+mem_name varchar2(30),
+mem_category varchar2(20),
+mem_gender varchar2(15),
+mem_address varchar2(50),
+mem_adhar varchar2(30),
+mem_mob varchar2(25),
+mem_email varchar2(30),
+mem_joindate varchar2(15),
+mem_enddate varchar2(15),
+mem_weight varchar2(10),
+mem_sugar varchar2(10),
+mem_allergy varchar2(20),
+mem_dis varchar2(20));
+=====================================
+create table packagetbl
+(pack_id varchar2(15),
+pack_name varchar2(20),
+treat1_id varchar2(15),
+treat2_id varchar2(15),
+treat3_id varchar2(15),
+treat4_id varchar2(15),
+treat5_id varchar2(15),
+realcost varchar2(10),
+discount varchar2(10),
+tcost varchar2(10),
+ttax varchar2(10));
+======================================
+create table paymenttbl
+(payid varchar2(15),
+bookid varchar2(15),
+cust_mem_id varchar2(15),
+treatid varchar2(15),
+pamount varchar2(10),
+tamount varchar2(10),
+dop varchar2(15),
+chequeno varchar2(15),
+chequedt varchar2(15),
+bankname varchar2(15),
+branch varchar2(15));
+=====================================
+create table scheduletbl
+(staffid varchar2(15),
+bookid varchar2(15),
+custmemid varchar2(15),
+apdate varchar2(15),
+starttime varchar2(15),
+endtime varchar2(15));
+=====================================
+create table stafftbl
+(staffid varchar2(15),
+sname varchar2(30),
+sgender varchar2(15),
+address varchar2(50),
+mobile varchar2(25),
+email varchar2(20),
+joindate varchar2(15),
+speciality varchar2(15),
+previouswork varchar2(15),
+salary varchar2(10));
+=====================================
+create table treatmenttbl
+(treat_id varchar2(15),
+treat_type varchar2(15),
+treat_name varchar2(20),
+t_cost varchar2(10),
+t_duration varchar2(10),
+diettype varchar2(10));
+====================================
+create table typetbl
+(typeid varchar2(15),
+typename varchar2(20));
+====================================
